@@ -1,0 +1,32 @@
+<view class="container">
+  <!--书名  -->
+  <view class="name">{{book.title}}</view>
+  <!--书籍信息  -->
+  <view class="infoBlock">
+    <view class="left"><image src="{{book.image}}"></image></view>
+    <view class="right">
+      <view class="author"><text>作者:{{book.author[0]}}</text></view>
+      <view class="publisher"><text>出版社:{{book.publisher}}</text></view>
+      <view class="pubdate"><text>出版年:{{book.pubdate}}</text></view>
+      <view class="pages"><text>页数:{{book.pages}}</text></view>
+      <view class="price"><text>定价:{{book.price}}</text></view>
+      <view class="binding"><text>装帧:{{book.binding}}</text></view>
+      <view class="isbn13"><text>ISBN:{{book.isbn13}}</text></view>
+    </view>
+  </view>
+  <!--各种简介  -->
+  <view class="desc">
+    <view class="contentDesc">
+      <view class="title">内容简介······</view>
+      <text>　　{{book.summary}}</text>
+    </view>
+    <view class="authorDesc">
+      <view class="title">作者简介······</view>
+      <text>{{book.author_intro}}</text>
+    </view>
+    <view class="authorDesc">
+      <view class="title">目录······</view>
+      <text>{{book.catalog}}</text>
+    </view>
+  </view>
+</view>

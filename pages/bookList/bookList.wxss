@@ -1,0 +1,67 @@
+.top{
+  display: flex;
+  flex-direction: row;
+  margin-top:30rpx;
+}
+.show{
+  display: block;
+}
+.noshow{
+  display: none;
+}
+input{
+  border: 2rpx solid #D9DADA;
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+}
+.loading{
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+.loading view {
+  position: absolute;
+  top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+scroll-view{
+  flex-direction: column;
+}
+.book{
+  border-bottom: 2rpx solid #000;
+  color:#858585;
+  padding: 20rpx;
+  overflow: hidden;
+}
+.image{
+  float: left;
+  margin-right: 10px;
+}
+.image image{
+  width:200rpx;
+  height:250rpx;
+}
+.rate .rateImg{
+  width:110rpx;
+  height:25rpx;
+  background-image: url('../../assets/image/rating.png')
+}
+.rateNum {
+  color:#e09015;
+}
+.summary{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  height: 131rpx;
+}
+.summary-text{
+  line-height:24rpx;
+  font-size:24rpx;
+}

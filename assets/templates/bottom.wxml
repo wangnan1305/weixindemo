@@ -1,0 +1,8 @@
+<template name="copyright">
+  <view class="copyright">
+    <text>京ICP证070359号 北京市公安局朝阳分局备案编号</text>
+  </view>
+</template>
+<view class="copyright">
+  <text>京ICP证070359号 北京市公安局朝阳分局备案编号</text>
+</view>

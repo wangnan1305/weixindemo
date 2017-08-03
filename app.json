@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bookList/bookList",
+    "pages/logs/logs",
+    "pages/book/book"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "第一个小程序",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },
+      {
+        "pagePath": "pages/bookList/bookList",
+        "text": "书籍"
+      }
+    ],
+    "color": "#b0bec5",
+    "backgroundColor": "#2196F3",
+    "selectedColor": "#fff",
+    "borderStyle": "#F8BBD0",
+    "position": "bottom"
+  },
+  "debug": true
+}

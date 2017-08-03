@@ -1,0 +1,36 @@
+<view class="container">
+  <!-- <view class="{{loadingShow ? 'show' : 'hidden'}}">
+    <view class="loading" >
+      <view>加载中...</view>
+    </view>
+  </view> -->
+  
+  <view class="top">
+     <!-- <view class="classname">{{inputVal}}  </view>  -->
+    <input type="text" bindinput="bindKeyInput" placeholder="请输入书名" maxlength="30" confirm-type="search"/>
+    <button type="default" size="mini" loading="{{loading}}" catchtap="search">搜索</button>
+  </view>
+  <view class="{{isShowTip ? 'show' : 'hidden'}}">
+    <view class="tip">没有搜索到内容</view>
+  </view>
+  <scroll-view scroll-y class="{{bookListShow ? 'show' : 'noshow'}}">
+    <block wx:for="{{bookList}}" wx:key="id">
+      <view class="book" data-bookname="{{item.title}}" catchlongtap="tapName">
+        <view class="image" id="{{item.id}}" catchtap="clickTo"><image src="{{item.image}}"></image></view>
+        <view class="name"><text>{{item.title}}</text></view>
+        <view class="info">
+          <text>{{item.author}}</text>/<text>{{item.publisher}}</text>/<text>{{item.pubdate}}</text>/<text>{{item.price}}</text>
+        </view>
+        <view class="rate">
+          <icon class="rateImg" /> 
+          <text>{{item.rating.average}}</text>
+          <text>　共有<text class="rateNum">({{item.rating.numRaters}})</text>条评价</text>
+        </view>
+        <view class="summary">
+          <text class="summary-texts">　　{{item.summary}}</text>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="{{getMoreShow ? 'show' : 'noshow'}} " catchtap="getMore">加载更多</view>
+</view>

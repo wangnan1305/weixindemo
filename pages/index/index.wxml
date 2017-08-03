@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="scaleToFill" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  
+  <include src="../../assets/templates/bottom.wxml"/>
+</view>
+<view class="buttons">
+  <button type="primary" catchtap="getLocation" size="mini">获取地址</button>
+  <button type="primary" catchtap="showActionSheet" size="mini">显示操作菜案</button>
+  <button type="primary" catchtap="showNavigationBarLoading" size="mini">导航条加载动画</button>
+  <button type="primary" catchtap="setTopBarText" size="mini">置顶栏文字</button>
+  <button type="primary" open-type="share" size="mini">页面内转发按钮</button>
+  <button type="primary" catchtap="getEWM" size="mini">获取当前页面二维码</button>
+  <image src='data:image/jpg;base64,{{imgData}}'></image>
+</view>
